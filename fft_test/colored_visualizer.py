@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
-PORT = '/dev/cu.usbmodem112401'
+PORT = '/dev/cu.usbmodem112201'
 BAUD = 115200
 ser = serial.Serial(PORT, BAUD)
 
@@ -42,8 +42,8 @@ plt.grid(True)
 
 # Smoothing
 last_vals = np.zeros(63)
-smoothing = 0.6
-scale_factor = 2.5
+smoothing = 0.4
+scale_factor = 10
 
 def update(frame):
     global last_vals
