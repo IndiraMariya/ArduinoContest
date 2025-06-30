@@ -29,13 +29,21 @@ void loop() {
     if (i == 3 || i == 4) {
       bassMag += mag;
     }
-    
+
+    // Optional: show all frequency bin magnitudes
     Serial.print(mag);
     Serial.print(i < 63 ? ',' : '\n');
   }
 
-  bassMag = constrain(bassMag / 2, 0, 255);  // Average of bin 3 and 4
+  // bassMag = constrain(bassMag / 2, 0, 255);  // Average of bin 3 and 4
+  if (bassMag < 20) bassMag = 0;  // Ignore weak signals
+  else bassMag = constrain(bassMag * 2.0 , 0, 255);  // Boost
+
+  // Print motor control value
+  Serial.print("Motor PWM (BassMag): ");
+  Serial.println(bassMag);
+
   analogWrite(motorPin, bassMag);
 
-  delay(30);
+  delay(100);
 }
