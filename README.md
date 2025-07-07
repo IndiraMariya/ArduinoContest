@@ -65,3 +65,11 @@ Speak or play sound near the microphone to check if values change in the `Serial
 - Using floats is not always the most efficient way on an Arduino because they are too powerful. They represent big and small numbers accurately, but FFT doesn’t need that much precision or range, and the output values of FFT do not vary wildly — they change in predictable ways.
 
 - Additionally, floats use a lot of memory, and Arduino has limited RAM. Also, the Arduino Analog-to-Digital Converter (ADC) gives integer values, and since FFT can use integers, there is no need to convert values to floats. The solution is to use a fixed-point implementation, which uses integers to represent decimal numbers, and it uses less memory since float math is avoided. This meets the needs for FFT and keeps the performance high on devices like Arduino.
+
+7. Sources (MLA) for FFT Explanation:
+- Bernoulli, Daniel. "Application of the FFT." Mathematics Stack Exchange, 12 Feb. 2017, https://math.stackexchange.com/q/2139840. Accessed 5 July 2025.
+- Dewesoft. "Guide to FFT Analysis (Fast Fourier Transform)." Dewesoft, https://dewesoft.com/blog/guide-to-fft-analysis. Accessed 5 July 2025.
+- Klafyvel. "FFT on Arduino." Klafyvel, 13 Nov. 2021, https://klafyvel.me/blog/articles/fft-arduino/. Accessed 5 July 2025.
+- Marcus Müller. "What Is a Frequency Bin?" DSP Stack Exchange, 6 May 2016, https://dsp.stackexchange.com/questions/26927/what-is-a-frequency-bin. Accessed 5 July 2025.
+- Singh, Rahul. "Breaking Down Confusions over Fast Fourier Transform (FFT)." Medium, Analytics Vidhya, 19 May 2021, https://medium.com/analytics-vidhya/breaking-down-confusions-over-fast-fourier-transform-fft-1561a029b1ab. Accessed 5 July 2025.
+- Tektronix. "What Is FFT (Fast Fourier Transform) Math Function? Why Is It Useful on an Oscilloscope?" Tektronix Support FAQs, https://www.tek.com/en/support/faqs/what-fft-fast-fourier-transform-math-function-oscilloscope-useful. Accessed 5 July 2025.
