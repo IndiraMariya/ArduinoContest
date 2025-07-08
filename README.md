@@ -49,7 +49,7 @@ Speak or play sound near the microphone to check if values change in the `Serial
     - Our code uses in-place FFT, which is more memory-efficient and ideal for our Arduino's limited RAM. We are also leveraging FFT symmetry by only analyzing the first 64 frequency bins.
     - For our project, we are specifically using Fixed FFT-8 because it offers fast performance and low memory usage, which is ideal for the Arduino’s limited processing power and RAM. While it sacrifices some precision, Fixed FFT-8 is sufficient for detecting bass frequencies and generating vibration feedback in sync with the music in real time.
 
-3. Frequency Filtering Based on FFT Bins & How we Used this: 
+3. Frequency Filtering Based on FFT Bins & How We Used this: 
 - FFT splits the audio signal into “bins”, which represent ranges of frequencies. Each bin corresponds to a specific frequency band in the signal. For example, if a 256-point FFT is used at a sampling rate of 1024 Hz, then: 1024 / 256 = 4 Hz per bin This means:
   - Bin 0 = 0 Hz
   - Bin 1 = 4 Hz
