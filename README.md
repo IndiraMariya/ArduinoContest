@@ -57,9 +57,9 @@ Speak or play sound near the microphone to check if values change in the `Serial
 
 - Important note: Bin 0 is the DC component (0 Hz) and only bins up to bin 128 (half of 256) are used for analysis since the second half mirrors the first. Based on how strong the signal is in each bin, you can categorize it into bass, mid, or treble, or make more detailed frequency bands depending on your application.
 
-- Our code only focuses on the first 64 bins or positive frequencies only and FFT symmtery allows us to ignore bins 64 to 127 (these are mirror duplicates). In our application we are extracting bass energy from Bin 3 which 225 Hz and Bin 4 which is 300 Hz. These are in the lower-mid/bass range and then we are turning that into PMW output to a motor. Essentially we are driving a motor based on bass intensity. 
+- Our code only focuses on the first 64 bins or positive frequencies only and FFT symmtery allows us to ignore bins 64 to 127 (these are mirror duplicates). In our application we are extracting bass energy from Bin 3 which 225 Hz and Bin 4 which is 300 Hz. These are in the lower-mid/bass range and then we are turning that into PMW output to a motor. Essentially we are driving a motor based on bass intensity. We selected these bins because they correspond to frequency ranges commonly found in most songs. Due to the limited number of motors we could use in our project, we prioritized frequencies that would be reliably present in a wide range of music content.
 
-7. Sources (MLA) for FFT Explanation:
+4. Sources (MLA) for FFT Explanation:
 - Bernoulli, Daniel. "Application of the FFT." Mathematics Stack Exchange, 12 Feb. 2017, https://math.stackexchange.com/q/2139840. Accessed 5 July 2025.
 - Dewesoft. "Guide to FFT Analysis (Fast Fourier Transform)." Dewesoft, https://dewesoft.com/blog/guide-to-fft-analysis. Accessed 5 July 2025.
 - Klafyvel. "FFT on Arduino." Klafyvel, 13 Nov. 2021, https://klafyvel.me/blog/articles/fft-arduino/. Accessed 5 July 2025.
