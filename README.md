@@ -1,4 +1,3 @@
-# ArduinoContest
 A repository for the IEEE SOLID STATE CIRCUITS SOCIETY™ Contest
 
 ## Materials
@@ -29,6 +28,7 @@ Install required libraries:
 ## Testing
 Speak or play sound near the microphone to check if values change in the `Serial Monitor`.
 <img width="400" alt="SCR-20250628-spmj" src="https://github.com/user-attachments/assets/5b9714d4-04e3-480a-a8a4-749c56c4627b" />
+
 
 ## FFT:
 1. Why is FFT Important For Our Project?
@@ -66,3 +66,5 @@ Speak or play sound near the microphone to check if values change in the `Serial
 - Marcus Müller. "What Is a Frequency Bin?" DSP Stack Exchange, 6 May 2016, https://dsp.stackexchange.com/questions/26927/what-is-a-frequency-bin. Accessed 5 July 2025.
 - Singh, Rahul. "Breaking Down Confusions over Fast Fourier Transform (FFT)." Medium, Analytics Vidhya, 19 May 2021, https://medium.com/analytics-vidhya/breaking-down-confusions-over-fast-fourier-transform-fft-1561a029b1ab. Accessed 5 July 2025.
 - Tektronix. "What Is FFT (Fast Fourier Transform) Math Function? Why Is It Useful on an Oscilloscope?" Tektronix Support FAQs, https://www.tek.com/en/support/faqs/what-fft-fast-fourier-transform-math-function-oscilloscope-useful. Accessed 5 July 2025.
+
+[![Watch on YouTube](https://img.youtube.com/vi/vuFymUGJiVI/hqdefault.jpg)](https://youtu.be/vuFymUGJiVI)
